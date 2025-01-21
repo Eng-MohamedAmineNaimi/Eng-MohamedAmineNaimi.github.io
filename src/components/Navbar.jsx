@@ -13,7 +13,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showLanguages, setShowLanguages] = useState(false);
 
-  // Gestion du défilement pour changer l'apparence de la barre de navigation
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -25,14 +24,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Changer la langue
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     setShowLanguages(false);
   };
 
-  // Afficher ou masquer le menu des langues
   const toggleLanguageDropdown = () => {
     setShowLanguages(!showLanguages);
   };
@@ -56,7 +53,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src={"/src/assets/Amino/aminos2.jpg"}
+            src={"/src/assets/aminos2.jpg"}
             alt="logo"
             className="w-9 h-9 contain rounded-full"
           />

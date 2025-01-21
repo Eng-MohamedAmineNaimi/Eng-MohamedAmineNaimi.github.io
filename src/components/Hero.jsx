@@ -32,7 +32,7 @@ const Hero = () => {
 
           {/* Photo centrée */}
           <img
-            src={"/src/assets/Amino/aminos2.jpg"}
+            src={"/src/assets/aminos2.jpg"}
             alt="Profile"
             className="w-60 h-60 rounded-full object-cover mt-4"
           />
