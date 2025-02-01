@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa"; // Ajout de l'icône de la Terre
+import aminos3 from "../assets/tech/am.jpg";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -38,9 +39,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo et nom */}
@@ -53,16 +52,19 @@ const Navbar = () => {
           }}
         >
           <img
-            src={"/src/assets/aminos2.jpg"}
+            src={aminos3}
             alt="logo"
             className="w-9 h-9 contain rounded-full"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex items-center">
             {i18n.language === "ar" ? (
-              <span className="sm:block hidden">محمد أمين نعيمي</span>
+              <span className="block sm:hidden text-sm">محمد أمين نعيمي</span> // Texte plus petit en mobile
             ) : (
-              <span className="sm:block hidden">Mohamed Amine Naimi</span>
+              <span className="block sm:hidden text-sm">Mohamed Amine Naimi</span> // Texte plus petit en mobile
             )}
+            <span className="hidden sm:block text-lg"> {/* Texte plus grand pour les écrans larges */}
+              {i18n.language === "ar" ? "محمد أمين نعيمي" : "Mohamed Amine Naimi"}
+            </span>
           </p>
         </Link>
 
@@ -103,34 +105,54 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Menu de sélection de langue */}
-        <div className="relative ml-4">
+        {/* Menu de sélection de langue avec icône Terre */}
+        <div className="relative">
           <button
-            className="text-white font-medium relative z-20"
+            className="text-white font-medium flex items-center gap-2 text-sm" // Ajout de text-sm pour réduire la taille de la police
             onClick={toggleLanguageDropdown}
           >
-            {i18n.language === "en" && "English"}
-            {i18n.language === "fr" && "Français"}
-            {i18n.language === "ar" && "العربية"}
+            <FaGlobe size={18} className="text-white" /> {/* Icône Terre */}
+            <span>
+              {i18n.language === "en" && "English"}
+              {i18n.language === "fr" && "Français"}
+              {i18n.language === "ar" && "العربية"}
+            </span>
+            <svg
+              className="w-4 h-4 ml-2"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <span className="ml-2 text-xs text-gray-300">
+              {t("")} {/* Ajout du texte "Sélectionner la langue" */}
+            </span>
           </button>
 
           {showLanguages && (
             <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-md w-40">
               <ul>
                 <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm" // Taille de police réduite pour les options aussi
                   onClick={() => handleLanguageChange("en")}
                 >
                   English
                 </li>
                 <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm"
                   onClick={() => handleLanguageChange("fr")}
                 >
                   Français
                 </li>
                 <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm"
                   onClick={() => handleLanguageChange("ar")}
                 >
                   العربية

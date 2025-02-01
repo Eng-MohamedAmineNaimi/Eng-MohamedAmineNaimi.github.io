@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { styles } from "../styles";
+import aminos2 from "../assets/tech/aminos2.jpg";
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
@@ -32,7 +33,7 @@ const Hero = () => {
 
           {/* Photo centrée */}
           <img
-            src={"/src/assets/tech/aminos2.jpg"}
+            src={aminos2}
             alt="Profile"
             className="w-60 h-60 rounded-full object-cover mt-4"
           />

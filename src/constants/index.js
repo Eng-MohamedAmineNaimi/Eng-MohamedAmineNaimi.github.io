@@ -4,17 +4,15 @@ import {
   creator,
   web,
   javascript,
-  typescript,
-  html,
-  css,
+  
   reactjs,
   redux,
-  tailwind,
+  
   nodejs,
   mongodb,
   git,
   spring,
-  docker,
+  
   meta,
   starbucks,
   tesla,
@@ -24,8 +22,7 @@ import {
   tripguide,
   angular,
   Java,
-  bootstrap,
-  postgresql,
+  
   express,
   insomnia,
   postman,
@@ -49,36 +46,10 @@ export const navLinks = [
   },
 ];
 const technologies = [
-  {
-    name: "Html",
-    icon: html,
-  },
-  {
-    name: "Css",
-    icon: css,
-  },
-  {
-    name: "Bootstrap",
-    icon: bootstrap,
-  },
-  {
-    name: "Tailwind",
-    icon: tailwind,
-  },
+  
 
-  {
-    name: "Git",
-    icon: git,
-  },
  
-  {
-    name: "Docker",
-    icon: docker,
-  },
-  {
-    name: "Postgresql",
-    icon:   postgresql,
-  },
+ 
  {
     name: "Java",
     icon: Java,
@@ -95,10 +66,7 @@ const technologies = [
     name: "Javascript",
     icon: javascript,
   },
-  {
-    name: "Typescript",
-    icon: typescript,
-  },
+ 
  {
     name: "Mongo",
     icon: mongodb,
@@ -119,6 +87,7 @@ const technologies = [
     name: "Redux",
     icon: redux,
   },
+
   {
     name: "Insomnia",
     icon: insomnia,
@@ -130,6 +99,9 @@ const technologies = [
   {
     name: "Swagger",
     icon: swagger,
+  }, {
+    name: "Git",
+    icon: git,
   },
   {
     name: "Aws",
