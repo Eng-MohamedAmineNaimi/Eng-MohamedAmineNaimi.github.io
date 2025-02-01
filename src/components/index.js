@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import About from "../components/Abouts";
 import Tech from "./Tech";
 import Experience from "./Experience";
-import Works from "./Works";
+//import Works from "./Works";
 import Certification from "./Certification";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
@@ -18,7 +18,7 @@ export {
   About,
   Tech,
   Experience,
-  Works,
+  //Works,
   Certification,
   Contact,
   CanvasLoader,
