@@ -1,24 +1,37 @@
-name: Deploy Portfolio
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Change "main" si ton dépôt a une autre branche par défaut
+      - main  # Déclenche le workflow à chaque push sur la branche principale
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      # Étape 1 : Récupérer le code source
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # Étape 2 : Configurer Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          branch: gh-pages
-          folder: dist
+          node-version: 18  # Utilisez la version de Node.js compatible avec votre projet
+
+      # Étape 3 : Installer les dépendances
+      - name: Install dependencies
+        run: npm install
+
+      # Étape 4 : Build du projet
+      - name: Build project
+        run: npm run build
+
+      # Étape 5 : Déployer sur GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Dossier contenant les fichiers à déployer
+          destination_dir: ./   # Dossier de destination sur GitHub Pages
