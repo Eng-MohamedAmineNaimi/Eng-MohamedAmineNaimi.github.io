@@ -24,6 +24,7 @@ import bootstrap from"./tech/bootstrap.png";
 import postgresql from"./tech/postgresql.png";
 import ISET from "./tech/ISET.jpeg"
 import ARM from "./tech/ARM.png"
+import test from"./tech/test.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -49,6 +50,7 @@ import CYBER from "./tech/CYBER.png"
 import eCertificate from "./tech/eCertificate.png"
 import AWSRES from "./tech/AWSRES.png"
 import C130 from "./tech/C130.jpeg"
+
 export {
   logo,
   backend,
@@ -99,5 +101,6 @@ export {
   CYBER,
   eCertificate,
   AWSRES,
-  C130
+  C130,
+test
 };

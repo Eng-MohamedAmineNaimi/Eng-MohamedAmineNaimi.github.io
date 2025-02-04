@@ -5,7 +5,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { ARM, fre, ISET, TR, way } from "../assets";  // Assurez-vous que les icônes sont correctement importées
+import { ARM, fre, ISET, TR, way,test } from "../assets";  // Assurez-vous que les icônes sont correctement importées
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -55,19 +55,19 @@ const ExperienceCard = ({ experience }) => {
 const StagesAndExperiences = () => {
   const experiences = [
     {
-      title: " Conception d'une application web School Management",
+      title: "Application School Management",
       date: "Août 2024 – Décembre 2024",
       company: "Freelance ",
       icon: fre,  // Assurez-vous que les icônes sont importées correctement
       iconBg: "#E6DEDD",
       content: [
-        "Développement d'une application de gestion scolaire complète.",
+        "Conception et Développement d'une application web de gestion scolaire complète.",
         "Technologies : MERN Stack, Docker, Passport pour l'authentification, Redux pour la gestion d'état.",
         "Mise en place de conteneurs Docker pour simplifier le déploiement.",
       ],
     },
     {
-      title: "Projet de fin d'étude : Application d'offres de stage",
+      title: " Application d'offres de stage",
       date: "Mars 2024 – Juin 2024",
       company: "Tradrly TN, Mahdia, Tunisie",
       icon: TR,
@@ -79,42 +79,47 @@ const StagesAndExperiences = () => {
       ],
     },
     {
-      title: "Conception d'une application e-commerce",
+      title: " Application e-commerce",
       date: "Août 2023",
       company: "1Waydev, Tunis, Tunisie",
       icon: way,
       iconBg: "#E6DEDD",
       content: [
-        "Développement d'une application e-commerce.",
+        "Conception et Développement d'une application e-commerce.",
         "Technologies : UML, HTML, CSS, Bootstrap, JavaScript, Java, Spring Boot, Angular.",
       ],
     },
     {
-      title: "Conception d'un site éducatif pour enfants",
+      title: "Site éducatif ",
       date: "Août 2022",
       company: "Tunisia in Circuit Test Engineering, Tunisie",
-      icon: "education_icon",  // Remplacer par une icône appropriée
-      iconBg: "#383E56",
-      content: ["Développement d'un site éducatif interactif pour enfants."],
-    },
-    {
-      title: "Projet de fin d'étude : Gestion Maintenance Assist",
-      date: "Septembre 2019 – Décembre 2019",
-      company: "Institut Supérieur des Études Technologiques, Béja, Tunisie",
-      icon: ISET,
+      icon: test,  // Remplacer par une icône appropriée
       iconBg: "#E6DEDD",
-      content: [
-        "Développement d'une application de gestion des stagiaires.",
-        "Technologies : UML, HTML, CSS, PHP7.",
+      content: [" Analyse et conception du site éducatif pour enfants en utilisant des diagrammes UML (cas d’utilisation, classes, séquence).",
+        "Conception du logo et de l’identité visuelle du site pour une meilleure attractivité et reconnaissance."
       ],
     },
     {
-      title: "Technicien Avionics",
+      title: "Application web de GMAO",
+      date: "Septembre 2019 – Décembre 2019",
+      company: "Institut Supérieur des Études Technologiques, Béja",
+      icon: ISET,
+      iconBg: "#E6DEDD",
+      content: [
+        "Conception et modélisation de l'application à l'aide d'UML(diagrammes de cas d'utilisation, de classes et de séquence).",
+ "Développement d'une application web de Gestion deMaintenance Assistée par Ordinateur (GMAO) permettant de planifier, suivre et optimiser les interventions de maintenance.",
+ "Technologies utilisées : UML, HTML, CSS, PHP7."
+      ],
+    },
+    {
+      title: "Technicien Avionique ",
       date: "2015 – 2019",
       company: "Armée de l'air tunisienne",
       icon: ARM,
       iconBg: "#383E56",
-      content: ["Expérience professionnelle dans le domaine de l'avionique."],
+      content: ["Maintenance préventive et corrective des systèmes avioniques(navigation, communication, radar, systèmes électriques et de contrôle de vol)." ,
+ "Diagnostic et réparation des pannes avioniques en respectant les normes de sécurité aéronautique.",
+ "Collaboration avec les équipes d’ingénierie et de maintenance pour assurer la disponibilité opérationnelle des aéronefs."],
     },
   ];
 

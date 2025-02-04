@@ -2,10 +2,10 @@
   "About": "حول",
   "Work": "العمل",
   "Contact": "اتصال",
-  "Web Developer": "مطور ويب",
-  "React Native Developer": "مطور React Native",
-  "Backend Developer": "مطور Backend",
-  "Content Creator": "مبدع محتوى",
+ "Web Developer": "مطور ويب",
+  "Full Stack Developer": "مطور Full Stack",
+  "React.js Developer": "مطور React.js",
+  "Java/JEE Developer": "مطور Java/JEE",
   "English": "الإنجليزية",
   "Français": "الفرنسية",
   "العربية": "العربية",
@@ -43,5 +43,7 @@
   "rightsReserved": "كل الحقوق محفوظة",
   "github": "GitHub",
 "linkedin": "LinkedIn"
+
+
   
 }

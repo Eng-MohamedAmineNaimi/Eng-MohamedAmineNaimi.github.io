@@ -38,13 +38,13 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language; // Langue actuelle
-  const isRtl = currentLanguage === "ar"; // Vérifiez si la langue est l'arabe
+  const isRtl = currentLanguage === "ar"; // Vérifie si la langue est l'arabe
 
   return (
     <div dir={isRtl ? "rtl" : "ltr"} className={isRtl ? "text-right" : "text-left"}>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{t("Introduction")}</p>
-        <h2 className={styles.sectionHeadText}>{t("Overview")}</h2>
+      
+        <h2 className={styles.sectionHeadText}>{t("Introduction")}</h2>
       </motion.div>
 
       <motion.p

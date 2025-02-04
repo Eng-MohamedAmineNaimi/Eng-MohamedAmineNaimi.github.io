@@ -3,44 +3,44 @@
   "Work": "Travail",
   "Contact": "Contact",
   "Web Developer": "Développeur Web",
-  "React Native Developer": "Développeur React Native",
-  "Backend Developer": "Développeur Backend",
-  "Content Creator": "Créateur de contenu",
+  "Full Stack Developer": "Développeur Full Stack",
+  "React.js Developer": "Développeur React.js",
+  "Java/JEE Developer": "Développeur Java/JEE",
   "English": "Anglais",
   "Français": "Français",
   "العربية": "Arabe",
   "Introduction": "Introduction",
   "Overview": "Aperçu",
-  "AboutDescription": "Je suis un ingénieur informatique avec une vaste expertise dans les technologies IT, y compris les langages, bibliothèques et frameworks tels que Java, JEE, Spring Boot, Docker, Angular et React. J'utilise fréquemment des outils comme Swagger, Postman et Insomnia pour gérer et tester les APIs, et je tire parti de Git et GitHub pour le contrôle des versions et la collaboration de projet. J'ai une connaissance approfondie des services AWS tels que S3, RDS, EC2 et IAM, ce qui me permet de gérer les infrastructures cloud et de déployer des applications sécurisées. Mon objectif est de travailler en collaboration pour fournir des solutions sur mesure, fonctionnelles et évolutives, garantissant que le produit final répond aux besoins spécifiques de mes clients. Unissons nos forces pour donner vie à votre vision."
-, "hero": {
-  "greeting": "Salut, je suis",
+  "AboutDescription": "Je suis un ingénieur en informatique avec une expertise approfondie dans les technologies IT, notamment les langages, bibliothèques et frameworks tels que Java, JEE, Spring Boot, Docker, Angular et React. J'utilise fréquemment des outils comme Swagger, Postman et Insomnia pour gérer et tester les APIs, et je m'appuie sur Git et GitHub pour le contrôle des versions et la collaboration sur les projets. Je possède une solide connaissance des services AWS tels que S3, RDS, EC2 et IAM, ce qui me permet de gérer des infrastructures cloud et de déployer des applications sécurisées. Mon objectif est de collaborer pour fournir des solutions sur mesure, fonctionnelles et évolutives, garantissant que le produit final répond aux besoins spécifiques de mes clients. Unissons nos forces pour donner vie à votre vision.",
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Mohamed Amine Naimi",
+    "job": "Ingénieur en informatique"
+  },
+  "contact": {
+    "subtitle": "Entrer en contact",
+    "title": "Contact.",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "message": "Votre message",
+    "namePlaceholder": "Quel est votre nom ?",
+    "emailPlaceholder": "Quelle est votre adresse email ?",
+    "messagePlaceholder": "Que souhaitez-vous dire ?",
+    "sending": "Envoi en cours...",
+    "send": "Envoyer"
+  },
+  "errors": {
+    "nameRequired": "Le nom est requis.",
+    "emailRequired": "L'email est requis.",
+    "invalidEmail": "Le format de l'email est invalide.",
+    "messageRequired": "Le message est requis."
+  },
+  "messages": {
+    "success": "Merci. Je vous répondrai dès que possible.",
+    "error": "Oups, une erreur s'est produite. Veuillez réessayer."
+  },
   "name": "Mohamed Amine Naimi",
-  "job": "Ingénieur informatique"
-},
-"contact": {
-  "subtitle": "Entrer en contact",
-  "title": "Contact.",
-  "name": "Votre nom",
-  "email": "Votre email",
-  "message": "Votre message",
-  "namePlaceholder": "Quel est votre nom ?",
-  "emailPlaceholder": "Quelle est votre adresse email ?",
-  "messagePlaceholder": "Que voulez-vous dire ?",
-  "sending": "Envoi...",
-  "send": "Envoyer"
-},
-"errors": {
-  "nameRequired": "Le nom est requis.",
-  "emailRequired": "L'email est requis.",
-  "invalidEmail": "Le format de l'email est invalide.",
-  "messageRequired": "Le message est requis."
-},
-"messages": {
-  "success": "Merci. Je vous répondrai dès que possible.",
-  "error": "Oups, une erreur s'est produite. Veuillez réessayer."
-},  
-"name": "Mohamed Amine Naimi",
-"rightsReserved": "Tous droits réservés",
-"github": "GitHub",
-"linkedin": "LinkedIn"
+  "rightsReserved": "Tous droits réservés",
+  "github": "GitHub",
+  "linkedin": "LinkedIn"
 }
