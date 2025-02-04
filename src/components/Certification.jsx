@@ -43,7 +43,7 @@ const certifications = [
 const CertificationCard = ({ index, name, description, image }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    className="bg-tertiary p-5 rounded-2xl w-[420px] sm:w-[480px] h-[540px] shadow-lg"
+    className="bg-tertiary p-5 rounded-2xl w-full sm:w-[480px] shadow-lg"
   >
     <Tilt
       options={{
@@ -54,14 +54,14 @@ const CertificationCard = ({ index, name, description, image }) => (
       className="rounded-2xl"
     >
       {/* Nom au-dessus de l'image */}
-      <h3 className="text-center text-white font-bold text-[22px] mb-4">{name}</h3>
+      <h3 className="text-center text-white font-bold text-[20px] mb-4">{name}</h3>
 
-      {/* Image avec taille adaptée */}
-      <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
+      {/* Image avec taille adaptative */}
+      <div className="relative w-full h-[200px] sm:h-[300px] overflow-hidden rounded-2xl">
         <img
           src={image}
           alt={`certification-${name}`}
-          className="w-full h-full object-contain" // Utilisez object-contain pour garantir un bon affichage sans déformation
+          className="w-full h-full object-contain"
         />
       </div>
 
@@ -75,15 +75,15 @@ const CertificationCard = ({ index, name, description, image }) => (
 
 const Certification = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+    <div className="mt-12 bg-black-100 rounded-[20px]">
+      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
         <motion.div variants={textVariant()}>
-      
           <h2 className={styles.sectionHeadText}>Certifications</h2>
         </motion.div>
       </div>
 
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-10`}>
+      {/* Correction: flex-col pour affichage en colonne sur mobile */}
+      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-col sm:flex-row flex-wrap gap-10 justify-center`}>
         {certifications.map((cert, index) => (
           <CertificationCard
             key={cert.name}
