@@ -151,12 +151,7 @@ const Navbar = () => {
                 >
                   Français
                 </li>
-                <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm"
-                  onClick={() => handleLanguageChange("ar")}
-                >
-                  العربية
-                </li>
+                
               </ul>
             </div>
           )}
