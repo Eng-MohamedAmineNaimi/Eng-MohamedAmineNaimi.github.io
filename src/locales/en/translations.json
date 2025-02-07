@@ -11,11 +11,11 @@
   "العربية": "Arabic",
   "Introduction": "Introduction",
   "Overview": "Overview",
-  "AboutDescription": "I am an IT engineer with extensive expertise in IT technologies, including languages, libraries, and frameworks such as Java, JEE, Spring Boot, Docker, Angular, and React. I frequently use tools like Swagger, Postman, and Insomnia for managing and testing APIs, and leverage Git and GitHub for version control and project collaboration. I have substantial knowledge of AWS services like S3, RDS, EC2, and IAM, which allows me to handle cloud infrastructures and deploy secure applications. My focus is on working collaboratively to deliver custom solutions that are both functional and scalable, ensuring that the final product meets the specific needs of my clients. Let’s join forces and bring your vision to life."
+  "AboutDescription": "I am a Full-Stack Developer & IT Engineer with strong expertise in modern technologies. I am proficient in various programming languages, libraries, and frameworks such as Java, JEE, Spring Boot, Docker, Angular, and React, allowing me to design and develop enterprise-level web applications from frontend to backend. I leverage tools like Swagger, Postman, and Insomnia for API management and testing, and I rely on Git and GitHub for version control and seamless project collaboration. Additionally, my experience with AWS services (S3, RDS, EC2, IAM) enables me to efficiently manage cloud infrastructures. \n My goal is to collaborate with innovative companies, delivering high-quality, scalable solutions that drive business value and meet clients' specific needs"
 , "hero": {
   "greeting": "Hi, I'm",
   "name": "Mohamed Amine Naimi",
-  "job": "IT Engineer"
+"job": "Full-Stack Developer & IT Engineer"
 }, "contact": {
   "subtitle": "Get in touch",
   "title": "Contact.",
@@ -41,6 +41,124 @@
 "name": "Mohamed Amine Naimi",
 "rightsReserved": "All rights reserved",
 "github": "GitHub",
-"linkedin": "LinkedIn"
+"linkedin": "LinkedIn","stages-experiences": {
+    "title": "Internships & Professional Experiences",
+    "subtitle": "My Experiences",
+    "schoolManagement": {
+      "title": "School Management Application",
+      "company": "Freelance",
+      "content": [
+        "Design and development of a complete school management web application.",
+        "Technologies: MERN Stack, Docker, Passport for authentication, Redux for state management.",
+        "Setup of Docker containers for easier deployment."
+      ]
+    },
+    "internshipApp": {
+      "title": "Internship Offers Application",
+      "company": "Tradrly TN, Mahdia, Tunisia",
+      "content": [
+        "Design and development of a web and mobile application for internship offers.",
+        "Technologies: UML, HTML, CSS, React Bootstrap, JavaScript, MERN Stack.",
+        "Authentication management using Passport and state management with Redux."
+      ]
+    },
+    "ecommerceApp": {
+      "title": "E-commerce Application",
+      "company": "1Waydev, Tunis, Tunisia",
+      "content": [
+        "Design and development of an e-commerce application.",
+        "Technologies: UML, HTML, CSS, Bootstrap, JavaScript, Java, Spring Boot, Angular."
+      ]
+    },
+    "educationalSite": {
+      "title": "Educational Website",
+      "company": "Test Tech, Tunisia",
+      "content": [
+        "Development of an educational website for students.",
+        "Technologies: HTML, CSS, JavaScript, PHP, MySQL."
+      ]
+    },
+    "gmaoApp": {
+      "title": "GMAO Application",
+      "company": "ISET, Tunisia",
+      "content": [
+        "Design and development of a maintenance management application (GMAO).",
+        "Technologies: UML, HTML, CSS, JavaScript, Java, JSP, MySQL."
+      ]
+    },
+    "avionicsTech": {
+      "title": "Avionics Technician",
+      "company": "Tunisian Air Force",
+      "content": [
+        "Repair and maintenance of aircraft electronic and electrical systems.",
+        "Work on avionic circuits and components.",
+        "Analysis and troubleshooting of aircraft electronic systems."
+      ]
+    }
+  },
+  
+    "parcours-academique": {
+      "title": "Academic Background",
+      
+      "education": [
+        {
+          "title": "National Engineering Diploma in Computer Engineering",
+          "date": "September 2021 – July 2024",
+          "institution": "Arab University of Sciences (ESIET-FSEG), Tunis, Tunisia",
+          "speciality": "Software Engineering"
+        },
+        {
+          "title": "Applied Bachelor's Degree in Information Technology",
+          "date": "February 2017 – January 2020",
+          "institution": "Higher Institute of Technological Studies (ISET), Béja, Tunisia",
+          "speciality": "Multimedia and Web Development"
+        },
+        {
+          "title": "Specialized Certificate in Avionics",
+          "date": "January 2013 – October 2014",
+          "institution": "School of Aeronautical Specialties, Sfax, Tunisia",
+          "speciality": "Avionics"
+        },
+        {
+          "title": "Baccalaureate: Technical Sciences",
+          "date": "June 2012",
+          "institution": "Abou Kacem Chebbi High School, Ariana, Tunisia",
+          "speciality": "Technical Sciences"
+        }
+      ]
+    },
+      "certifications": [
+        {
+          "name": "AWS Cloud Practitioner Certification",
+         
+          "image": "AWSRES"
+        },
+        {
+          "name": "OCI DevOps Certification",
+         
+          "image": "eCertificate"
+        },
+        {
+          "name": "CCNA Cyber Ops Certification",
+        
+          "image": "CYBER"
+        },
+        {
+          "name": "CCNA1 Certification",
+         
+          "image": "CCNA"
+        },
+        {
+          "name": "Qualification Certification",
+        
+          "image": "C130"
+        }
+      ],
+      "sectionHeader": "My Certifications",
+      "Download CV": "Download CV"
 
-}
+    }
+    
+    
+
+

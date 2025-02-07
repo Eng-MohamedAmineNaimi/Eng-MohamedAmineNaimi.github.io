@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useTranslation } from "react-i18next";
 
 const FormationCard = ({ formation }) => {
   return (
@@ -50,36 +51,32 @@ const FormationCard = ({ formation }) => {
 };
 
 const Forma = () => {
+  const { t } = useTranslation();
+
   const formations = [
     {
-      title: "AWS Cloud Practitioner Certification",
-      date: "Novembre 2023 – Février 2024",
-      organisme: "Orange Digital Center, La Marsa, Tunisie",
+      title: t("aws_certification"),
+      date: t("aws_date"),
+      organisme: t("aws_organisme"),
       icon: ODC,
       iconBg: "#E6DEDD",
-      content: [
-        "Compétences en Cloud Computing : Linux, Python, réseau, sécurité, bases de données relationnelles",
-        "Utilisation des services AWS : S3, RDS, EC2, IAM, etc.",
-        "Apprentissage collaboratif et conception d'applications pratiques",
-      ],
+      content: [t("aws_competences"), t("aws_services"), t("aws_collaboration")],
     },
     {
-      title: "Formation Full Stack Developer",
-      date: "Octobre 2022 – Mars 2023",
-      organisme: "SMART TUNISIAN TECHNOPARKS, Pôle Technologique El Ghazela, Tunisie",
+      title: t("fullstack_training"),
+      date: t("fullstack_date"),
+      organisme: t("fullstack_organisme"),
       icon: ST,
       iconBg: "#E6DEDD",
-      content: [
-        "Technologies étudiées : Scrum, Git, Java, JEE, Spring Boot, Angular",
-      ],
+      content: [t("fullstack_technologies")],
     },
   ];
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Mes Formations</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Formations Professionnelles.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>{t("mes_formations")}</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>{t("formations_professionnelles")}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

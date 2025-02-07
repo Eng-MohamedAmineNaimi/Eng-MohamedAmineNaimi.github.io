@@ -11,11 +11,11 @@
   "العربية": "Arabe",
   "Introduction": "Introduction",
   "Overview": "Aperçu",
-  "AboutDescription": "Je suis un ingénieur en informatique avec une expertise approfondie dans les technologies IT, notamment les langages, bibliothèques et frameworks tels que Java, JEE, Spring Boot, Docker, Angular et React. J'utilise fréquemment des outils comme Swagger, Postman et Insomnia pour gérer et tester les APIs, et je m'appuie sur Git et GitHub pour le contrôle des versions et la collaboration sur les projets. Je possède une solide connaissance des services AWS tels que S3, RDS, EC2 et IAM, ce qui me permet de gérer des infrastructures cloud et de déployer des applications sécurisées. Mon objectif est de collaborer pour fournir des solutions sur mesure, fonctionnelles et évolutives, garantissant que le produit final répond aux besoins spécifiques de mes clients. Unissons nos forces pour donner vie à votre vision.",
+  "AboutDescription": " Je suis un ingénieur en informatique et un développeur full-stack avec une expertise approfondie dans les technologies IT. \n Je maîtrise divers langages, bibliothèques et frameworks tels que Java, JEE, Spring Boot, Docker, Angular et React, me permettant de concevoir et de développer des applications complètes, du frontend au backend. J'utilise des outils comme Swagger, Postman et Insomnia pour gérer et tester les APIs, et je m'appuie sur Git et GitHub pour le contrôle des versions et la collaboration sur les projets. J'ai également une expérience avec les services AWS (S3, RDS, EC2, IAM), ce qui me permet de gérer des infrastructures cloud . \n Mon objectif est de collaborer avec des entreprises innovantes pour fournir des solutions sur mesure, fonctionnelles et évolutives, en garantissant que le produit final réponde aux besoins spécifiques de mes clients.",
   "hero": {
     "greeting": "Salut, je suis",
     "name": " Naimi Mohamed Amine",
-    "job": "Ingénieur en informatique"
+   "job": "Développeur Full-Stack & Ingénieur IT"
   },
   "contact": {
     "subtitle": "Entrer en contact",
@@ -42,5 +42,144 @@
   "name": "Mohamed Amine Naimi",
   "rightsReserved": "Tous droits réservés",
   "github": "GitHub",
-  "linkedin": "LinkedIn"
-}
+  "linkedin": "LinkedIn",
+  "stages-experiences": {
+    "title": "Stages et Expériences Professionnelles",
+    "subtitle": "Mes Expériences",
+    "schoolManagement": {
+      "title": "Application de Gestion Scolaire",
+      "company": "Freelance",
+      "content": [
+        "Conception et développement d'une application web complète de gestion scolaire.",
+        "Technologies utilisées : MERN Stack, Docker, Passport pour l'authentification, Redux pour la gestion d'état.",
+        "Mise en place de conteneurs Docker pour faciliter le déploiement."
+      ]
+    },
+    "internshipApp": {
+      "title": "Application de Gestion des Offres de Stage",
+      "company": "Tradrly TN, Mahdia, Tunisie",
+      "content": [
+        "Conception et développement d'une application web et mobile pour les offres de stage.",
+        "Technologies utilisées : UML, HTML, CSS, React Bootstrap, JavaScript, MERN Stack.",
+        "Gestion de l'authentification avec Passport et gestion d'état avec Redux."
+      ]
+    },
+    "ecommerceApp": {
+      "title": "Application E-commerce",
+      "company": "1Waydev, Tunis, Tunisie",
+      "content": [
+        "Conception et développement d'une application e-commerce.",
+        "Technologies utilisées : UML, HTML, CSS, Bootstrap, JavaScript, Java, Spring Boot, Angular."
+      ]
+    },
+    "educationalSite": {
+      "title": "Site Web Éducatif",
+      "company": "Test Tech, Tunisie",
+      "content": [
+        "Développement d'un site éducatif destiné aux étudiants.",
+        "Technologies utilisées : HTML, CSS, JavaScript, PHP, MySQL."
+      ]
+    },
+    "gmaoApp": {
+      "title": "Application GMAO",
+      "company": "ISET, Tunisie",
+      "content": [
+        "Conception et développement d'une application de gestion de maintenance assistée par ordinateur (GMAO).",
+        "Technologies utilisées : UML, HTML, CSS, JavaScript, Java, JSP, MySQL."
+      ]
+    },
+    "avionicsTech": {
+      "title": "Technicien en Avionique",
+      "company": "Armée de l'air tunisienne",
+      "content": [
+        "Réparation et maintenance des systèmes électroniques et électriques des avions.",
+        "Travail sur les circuits et composants avioniques.",
+        "Analyse et dépannage des systèmes électroniques aéronautiques."
+      ]
+    }
+  },
+  
+    "parcours-academique": {
+      "title": "Parcours Académique",
+      
+      "education": [
+        {
+          "title": "Diplôme National d'Ingénieur en Génie Informatique",
+          "date": "Septembre 2021 – Juillet 2024",
+          "institution": "Université Arabe des Sciences (ESIET-FSEG), Tunis, Tunisie",
+          "speciality": "Génie Logiciel"
+        },
+        {
+          "title": "Licence Appliquée en Technologies de l'Informatique",
+          "date": "Février 2017 – Janvier 2020",
+          "institution": "Institut Supérieur des Études Technologiques (ISET), Béja, Tunisie",
+          "speciality": "Multimédia et Développement Web"
+        },
+        {
+          "title": "Brevet de Spécialité en Avionique",
+          "date": "Janvier 2013 – Octobre 2014",
+          "institution": "École des Spécialités Aéronautiques, Sfax, Tunisie",
+          "speciality": "Avionique"
+        },
+        {
+          "title": "Baccalauréat : Sciences Techniques",
+          "date": "Juin 2012",
+          "institution": "Lycée Abou Kacem Chebbi, Ariana, Tunisie",
+          "speciality": "Sciences Techniques"
+        }
+      ]
+    },
+    
+      "mes_formations": "Mes Formations",
+      "formations_professionnelles": "Formations Professionnelles",
+      "aws_certification": "Certification AWS Cloud Practitioner",
+      "aws_date": "Novembre 2023 – Février 2024",
+      "aws_organisme": "Orange Digital Center, La Marsa, Tunisie",
+      "aws_competences": "Compétences en Cloud Computing : Linux, Python, réseau, sécurité, bases de données relationnelles",
+      "aws_services": "Utilisation des services AWS : S3, RDS, EC2, IAM, etc.",
+      "aws_collaboration": "Apprentissage collaboratif et conception d'applications pratiques",
+      "fullstack_training": "Formation Développeur Full Stack",
+      "fullstack_date": "Octobre 2022 – Mars 2023",
+      "fullstack_organisme": "SMART TUNISIAN TECHNOPARKS, Pôle Technologique El Ghazela, Tunisie",
+      "fullstack_technologies": "Technologies étudiées : Scrum, Git, Java, JEE, Spring Boot, Angular",
+      
+        "certifications": [
+          {
+            "name": "Certification AWS Cloud Practitioner",
+            
+            "image": "AWSRES"
+          },
+          {
+            "name": "Certification OCI DevOps",
+           
+            "image": "eCertificate"
+          },
+          {
+            "name": "Certification CCNA Cyber Ops",
+           
+            "image": "CYBER"
+          },
+          {
+            "name": "Certification CCNA1",
+           
+            "image": "CCNA"
+          },
+          {
+            "name": "Certification Qualification",
+           
+            "image": "C130"
+          }
+        ],
+        "sectionHeader": "Mes Certifications",
+        "Download CV": "Télécharger le CV"
+
+      }
+      
+      
+       
+      
+      
+    
+    
+  
+  

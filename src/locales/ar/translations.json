@@ -15,7 +15,7 @@
   ,"hero": {
     "greeting": "مرحباً، أنا",
     "name": "محمد أمين نعيمي",
-    "job": "مهندس معلوماتية"
+    "job": " مهندس إعلامية"
   },
   "contact": {
     "subtitle": "ابق على تواصل",
@@ -42,8 +42,136 @@
   "name": "محمد أمين نعيمي",
   "rightsReserved": "كل الحقوق محفوظة",
   "github": "GitHub",
-"linkedin": "LinkedIn"
+"linkedin": "LinkedIn",
+"stages-experiences": {
+    "title": "التدريبات والخبرات المهنية",
+    "subtitle": "خبراتي",
+    "schoolManagement": {
+      "title": "تطبيق إدارة المدارس",
+      "company": "عمل حر",
+      "content": [
+        "تصميم وتطوير تطبيق ويب كامل لإدارة المدارس.",
+        "التقنيات المستخدمة: MERN Stack، Docker، Passport للمصادقة، Redux لإدارة الحالة.",
+        "إعداد حاويات Docker لتسهيل النشر."
+      ]
+    },
+    "internshipApp": {
+      "title": "تطبيق عروض التدريب",
+      "company": "Tradrly TN، المهدية، تونس",
+      "content": [
+        "تصميم وتطوير تطبيق ويب وتطبيق جوال لعروض التدريب.",
+        "التقنيات المستخدمة: UML، HTML، CSS، React Bootstrap، JavaScript، MERN Stack.",
+        "إدارة المصادقة باستخدام Passport وإدارة الحالة باستخدام Redux."
+      ]
+    },
+    "ecommerceApp": {
+      "title": "تطبيق التجارة الإلكترونية",
+      "company": "1Waydev، تونس، تونس",
+      "content": [
+        "تصميم وتطوير تطبيق تجارة إلكترونية.",
+        "التقنيات المستخدمة: UML، HTML، CSS، Bootstrap، JavaScript، Java، Spring Boot، Angular."
+      ]
+    },
+    "educationalSite": {
+      "title": "موقع تعليمي",
+      "company": "Test Tech، تونس",
+      "content": [
+        "تطوير موقع تعليمي للطلاب.",
+        "التقنيات المستخدمة: HTML، CSS، JavaScript، PHP، MySQL."
+      ]
+    },
+    "gmaoApp": {
+      "title": "تطبيق GMAO",
+      "company": "ISET، تونس",
+      "content": [
+        "تصميم وتطوير تطبيق لإدارة الصيانة (GMAO).",
+        "التقنيات المستخدمة: UML، HTML، CSS، JavaScript، Java، JSP، MySQL."
+      ]
+    },
+    "avionicsTech": {
+      "title": "فني إلكترونيات الطيران",
+      "company": "جيش الطيران ",
+      "content": [
+        "إصلاح وصيانة الأنظمة الإلكترونية والكهربائية للطائرات.",
+        "العمل على الدوائر والمكونات الإلكترونية للطائرات.",
+        "تحليل وإصلاح الأعطال في الأنظمة الإلكترونية للطائرات."
+      ]
+    }
+  },
+    "parcours-academique": {
+      "title": "المسار الأكاديمي",
+    
+      "education": [
+        {
+          "title": "شهادة وطنية في هندسة الحاسوب",
+          "date": "سبتمبر 2021 – يوليو 2024",
+          "institution": "الجامعة العربية للعلوم (ESIET-FSEG)، تونس، تونس",
+          "speciality": "هندسة البرمجيات"
+        },
+        {
+          "title": "إجازة تطبيقية في تقنيات المعلومات",
+          "date": "فبراير 2017 – يناير 2020",
+          "institution": "المعهد العالي للدراسات التكنولوجية (ISET)، باجة، تونس",
+          "speciality": "الوسائط المتعددة وتطوير الويب"
+        },
+        {
+          "title": "شهادة تخصص في إلكترونيات الطيران",
+          "date": "يناير 2013 – أكتوبر 2014",
+          "institution": "مدرسة التخصصات الجوية، صفاقس، تونس",
+          "speciality": "إلكترونيات الطيران"
+        },
+        {
+          "title": "البكالوريا: العلوم التقنية",
+          "date": "يونيو 2012",
+          "institution": "معهد أبو القاسم الشابي، أريانة، تونس",
+          "speciality": "العلوم التقنية"
+        }
+      ]
+    },
+    
+      "mes_formations": "تدريباتي",
+      "formations_professionnelles": "التدريبات المهنية",
+      "aws_certification": "شهادة AWS Cloud Practitioner",
+      "aws_date": "نوفمبر 2023 – فبراير 2024",
+      "aws_organisme": "Orange Digital Center، المرسى، تونس",
+      "aws_competences": "مهارات الحوسبة السحابية: Linux، Python، الشبكات، الأمن، قواعد البيانات العلائقية",
+      "aws_services": "استخدام خدمات AWS: S3، RDS، EC2، IAM، إلخ.",
+      "aws_collaboration": "التعلم التعاوني وتصميم التطبيقات العملية",
+      "fullstack_training": "تدريب مطور Full Stack",
+      "fullstack_date": "أكتوبر 2022 – مارس 2023",
+      "fullstack_organisme": "SMART TUNISIAN TECHNOPARKS، القطب التكنولوجي الغزالة، تونس",
+      "fullstack_technologies": "التقنيات المدروسة: Scrum، Git، Java، JEE، Spring Boot، Angular"
+    ,
+      "certifications": [
+        {
+          "name": "شهادة AWS Cloud Practitioner",
+         
+          "image": "AWSRES"
+        },
+        {
+          "name": "شهادة OCI DevOps",
+         
+          "image": "eCertificate"
+        },
+        {
+          "name": "شهادة CCNA Cyber Ops",
+          
+          "image": "CYBER"
+        },
+        {
+          "name": "شهادة CCNA1",
+         
+          "image": "CCNA"
+        },
+        {
+          "name": "شهادة التأهيل",
+         
+          "image": "C130"
+        }
+      ],
+      "Download CV": "تحميل السيرة الذاتية"
 
+     
+    }
+    
 
-  
-}

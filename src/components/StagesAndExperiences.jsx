@@ -5,21 +5,19 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { ARM, fre, ISET, TR, way,test } from "../assets";  // Assurez-vous que les icônes sont correctement importées
+import { ARM, fre, ISET, TR, way, test } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
-      }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentStyle={{ background: "#1d1836", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={experience.date}
       iconStyle={{
         background: experience.iconBg,
         borderRadius: "50%",
-        width: "60px",  // Définir la taille de l'icône
+        width: "60px",
         height: "60px",
         display: "flex",
         justifyContent: "center",
@@ -27,11 +25,7 @@ const ExperienceCard = ({ experience }) => {
       }}
       icon={
         <div className="flex justify-center items-center w-full h-full overflow-hidden rounded-full">
-          <img
-            src={experience.icon}
-            alt={experience.company}
-            className="w-full h-full object-contain"  // S'assurer que l'icône ne dépasse pas
-          />
+          <img src={experience.icon} alt={experience.company} className="w-full h-full object-contain" />
         </div>
       }
     >
@@ -53,81 +47,64 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const StagesAndExperiences = () => {
+  const { t } = useTranslation();
+
   const experiences = [
     {
-      title: "Application School Management",
+      title: t("stages-experiences.schoolManagement.title"),
       date: "Août 2024 – Décembre 2024",
-      company: "Freelance ",
-      icon: fre,  // Assurez-vous que les icônes sont importées correctement
+      company: t("stages-experiences.schoolManagement.company"),
+      icon: fre,
       iconBg: "#E6DEDD",
-      content: [
-        "Conception et Développement d'une application web de gestion scolaire complète.",
-        "Technologies : MERN Stack, Docker, Passport pour l'authentification, Redux pour la gestion d'état.",
-        "Mise en place de conteneurs Docker pour simplifier le déploiement.",
-      ],
+      content: t("stages-experiences.schoolManagement.content", { returnObjects: true }),
     },
     {
-      title: " Application d'offres de stage",
+      title: t("stages-experiences.internshipApp.title"),
       date: "Mars 2024 – Juin 2024",
-      company: "Tradrly TN, Mahdia, Tunisie",
+      company: t("stages-experiences.internshipApp.company"),
       icon: TR,
       iconBg: "#383E56",
-      content: [
-        "Conception et développement d'une application web et mobile d'offres de stage.",
-        "Technologies : UML, HTML, CSS, React Bootstrap, JavaScript, MERN Stack.",
-        "Gestion des authentifications avec Passport et gestion d'état avec Redux.",
-      ],
+      content: t("stages-experiences.internshipApp.content", { returnObjects: true }),
     },
     {
-      title: " Application e-commerce",
+      title: t("stages-experiences.ecommerceApp.title"),
       date: "Août 2023",
-      company: "1Waydev, Tunis, Tunisie",
+      company: t("stages-experiences.ecommerceApp.company"),
       icon: way,
       iconBg: "#E6DEDD",
-      content: [
-        "Conception et Développement d'une application e-commerce.",
-        "Technologies : UML, HTML, CSS, Bootstrap, JavaScript, Java, Spring Boot, Angular.",
-      ],
+      content: t("stages-experiences.ecommerceApp.content", { returnObjects: true }),
     },
     {
-      title: "Site éducatif ",
+      title: t("stages-experiences.educationalSite.title"),
       date: "Août 2022",
-      company: "Tunisia in Circuit Test Engineering, Tunisie",
-      icon: test,  // Remplacer par une icône appropriée
+      company: t("stages-experiences.educationalSite.company"),
+      icon: test,
       iconBg: "#E6DEDD",
-      content: [" Analyse et conception du site éducatif pour enfants en utilisant des diagrammes UML (cas d’utilisation, classes, séquence).",
-        "Conception du logo et de l’identité visuelle du site pour une meilleure attractivité et reconnaissance."
-      ],
+      content: t("stages-experiences.educationalSite.content", { returnObjects: true }),
     },
     {
-      title: "Application web de GMAO",
+      title: t("stages-experiences.gmaoApp.title"),
       date: "Septembre 2019 – Décembre 2019",
-      company: "Institut Supérieur des Études Technologiques, Béja",
+      company: t("stages-experiences.gmaoApp.company"),
       icon: ISET,
       iconBg: "#E6DEDD",
-      content: [
-        "Conception et modélisation de l'application à l'aide d'UML(diagrammes de cas d'utilisation, de classes et de séquence).",
- "Développement d'une application web de Gestion deMaintenance Assistée par Ordinateur (GMAO) permettant de planifier, suivre et optimiser les interventions de maintenance.",
- "Technologies utilisées : UML, HTML, CSS, PHP7."
-      ],
+      content: t("stages-experiences.gmaoApp.content", { returnObjects: true }),
     },
     {
-      title: "Technicien Avionique ",
+      title: t("stages-experiences.avionicsTech.title"),
       date: "2015 – 2019",
-      company: "Armée de l'air tunisienne",
+      company: t("stages-experiences.avionicsTech.company"),
       icon: ARM,
       iconBg: "#383E56",
-      content: ["Maintenance préventive et corrective des systèmes avioniques(navigation, communication, radar, systèmes électriques et de contrôle de vol)." ,
- "Diagnostic et réparation des pannes avioniques en respectant les normes de sécurité aéronautique.",
- "Collaboration avec les équipes d’ingénierie et de maintenance pour assurer la disponibilité opérationnelle des aéronefs."],
+      content: t("stages-experiences.avionicsTech.content", { returnObjects: true }),
     },
   ];
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Mes Expériences</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Stages & Expériences Professionnelles.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>{t("stages-experiences.subtitle")}</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>{t("stages-experiences.title")}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

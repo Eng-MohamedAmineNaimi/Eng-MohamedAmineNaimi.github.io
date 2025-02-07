@@ -1,41 +1,36 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
-import { styles } from "../styles";
+import Tilt from "react-parallax-tilt";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../styles";
 
 import { AWSRES, eCertificate, CYBER, CCNA, C130 } from "../assets";
 
 const certifications = [
   {
-    name: "AWS re/Start Graduate",
-    description:
-      "Programme intensif de formation en cloud AWS, couvrant les compétences essentielles pour démarrer une carrière dans le cloud computing.",
+    name: "Certification AWS Cloud Practitioner",
+   
     image: AWSRES,
   },
   {
-    name: "OCI Devops",
-    description: "Certification attestant une expertise en DevOps avec Oracle Cloud Infrastructure.",
+    name: "Certification OCI DevOps",
+  
     image: eCertificate,
   },
   {
-    name: "CCNA Cyber Ops",
-    description:
-      "Certification axée sur les opérations de cybersécurité pour les centres de sécurité (SOC).",
+    name: "Certification CCNA Cyber Ops",
+   
     image: CYBER,
   },
   {
-    name: "CCNA1",
-    description:
-      "Introduction aux concepts fondamentaux de la mise en réseau et des protocoles Internet.",
+    name: "Certification CCNA1",
+   
     image: CCNA,
   },
   {
     name: "Certification Qualification",
-    description:
-      "Certificat attestant une qualification spécifique pour des compétences professionnelles.",
+ 
     image: C130,
   },
 ];
@@ -53,10 +48,7 @@ const CertificationCard = ({ index, name, description, image }) => (
       }}
       className="rounded-2xl"
     >
-      {/* Nom au-dessus de l'image */}
       <h3 className="text-center text-white font-bold text-[20px] mb-4">{name}</h3>
-
-      {/* Image avec taille adaptative */}
       <div className="relative w-full h-[200px] sm:h-[300px] overflow-hidden rounded-2xl">
         <img
           src={image}
@@ -64,8 +56,6 @@ const CertificationCard = ({ index, name, description, image }) => (
           className="w-full h-full object-contain"
         />
       </div>
-
-      {/* Description en dessous */}
       <div className="mt-4">
         <p className="mt-2 text-secondary text-[14px] leading-relaxed">{description}</p>
       </div>
@@ -78,18 +68,16 @@ const Certification = () => {
     <div className="mt-12 bg-black-100 rounded-[20px]">
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
         <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>Certifications</h2>
+          <h2 className={styles.sectionHeadText}>Mes Certifications</h2>
         </motion.div>
       </div>
-
-      {/* Correction: flex-col pour affichage en colonne sur mobile */}
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-col sm:flex-row flex-wrap gap-10 justify-center`}>
         {certifications.map((cert, index) => (
           <CertificationCard
             key={cert.name}
             index={index}
             name={cert.name}
-            description={cert.description}
+          
             image={cert.image}
           />
         ))}

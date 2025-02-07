@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa"; // Ajout de l'icône de téléchargement
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -8,11 +8,6 @@ const Footer = () => {
   return (
     <footer className="w-full bg-primary text-white py-4">
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
-        {/* Nom et Copyright */}
-        <p className="text-[14px]">
-          {t("name")} © {new Date().getFullYear()}
-        </p>
-
         {/* Liens avec icônes */}
         <div className="flex gap-4 mt-2 sm:mt-0">
           <a
@@ -33,7 +28,20 @@ const Footer = () => {
             <FaLinkedin size={20} />
             {t("linkedin")}
           </a>
+          <a
+            href="/Naimi Mohamed Amine.pdf"
+            download="Mohamed_Amine_Naimi_CV"
+            className="flex items-center gap-2 text-white hover:text-secondary transition duration-200"
+          >
+            <FaFileDownload size={20} /> {/* Icône de téléchargement */}
+            <span>{t("Download CV")}</span>
+          </a>
         </div>
+
+        {/* Nom et Copyright */}
+        <p className="text-[14px]">
+          {t("name")} © {new Date().getFullYear()}
+        </p>
       </div>
     </footer>
   );

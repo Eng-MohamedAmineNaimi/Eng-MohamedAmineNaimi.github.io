@@ -42,10 +42,9 @@ const About = () => {
     <div dir={isRtl ? "rtl" : "ltr"} className={isRtl ? "text-right" : "text-left"}>
       {/* Section Introduction */}
       <motion.div variants={textVariant()}>
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-  {t("Introduction")}
-</h2>
-
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          {t("Introduction")}
+        </h2>
       </motion.div>
 
       {/* Section Description */}
@@ -53,7 +52,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] mx-auto px-0 leading-[30px] text-center md:text-left"
       >
-        {t("AboutDescription")}
+        {t("AboutDescription").split("\n").map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
       </motion.p>
 
       {/* Section des cartes */}
