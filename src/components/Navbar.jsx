@@ -83,8 +83,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-       
-
+      
 
         {/* Menu hamburger pour écrans petits */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
