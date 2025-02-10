@@ -63,7 +63,7 @@ const Navbar = () => {
               <span className="block sm:hidden text-sm">Mohamed Amine Naimi</span> // Texte plus petit en mobile
             )}
             <span className="hidden sm:block text-lg"> {/* Texte plus grand pour les écrans larges */}
-              {i18n.language === "ar" ? "محمد أمين نعيمي" : "Mohamed Amine Naimi"}
+              {i18n.language === "ar" ? "محمد أمين نعيمي" : " Naimi Mohamed Amine"}
             </span>
           </p>
         </Link>
@@ -83,79 +83,8 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Réseaux sociaux avec noms et icônes */}
-        <div className="hidden sm:flex items-center gap-6">
-          <a
-            href="https://github.com/Eng-MohamedAmineNaimi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-white hover:text-gray-400 transition duration-200 gap-2"
-          >
-            <FaGithub size={20} />
-            {t("github")}
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mohamed-amine-naimi-907656263/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-white hover:text-gray-400 transition duration-200 gap-2"
-          >
-            <FaLinkedin size={20} />
-            {t("linkedin")}
-          </a>
-        </div>
+       
 
-        {/* Menu de sélection de langue avec icône Terre */}
-        <div className="relative">
-          <button
-            className="text-white font-medium flex items-center gap-2 text-sm" // Ajout de text-sm pour réduire la taille de la police
-            onClick={toggleLanguageDropdown}
-          >
-            <FaGlobe size={18} className="text-white" /> {/* Icône Terre */}
-            <span>
-              {i18n.language === "en" && "English"}
-              {i18n.language === "fr" && "Français"}
-              {i18n.language === "ar" && "العربية"}
-            </span>
-            <svg
-              className="w-4 h-4 ml-2"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <span className="ml-2 text-xs text-gray-300">
-              {t("")} {/* Ajout du texte "Sélectionner la langue" */}
-            </span>
-          </button>
-
-          {showLanguages && (
-            <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-md w-40">
-              <ul>
-                <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm" // Taille de police réduite pour les options aussi
-                  onClick={() => handleLanguageChange("en")}
-                >
-                  English
-                </li>
-                <li
-                  className="px-4 py-2 cursor-pointer hover:bg-gray-200 text-sm"
-                  onClick={() => handleLanguageChange("fr")}
-                >
-                  Français
-                </li>
-                
-              </ul>
-            </div>
-          )}
-        </div>
 
         {/* Menu hamburger pour écrans petits */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
