@@ -1,9 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa"; // Ajout de l'icône de téléchargement
+import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  // Déterminer l'URL correcte selon l'environnement
+  const baseUrl = "https://eng-mohamedaminenaimi.github.io/portfolio/";
+  const cvUrl = `${baseUrl}Naimi_Mohamed_Amine.pdf`;
 
   return (
     <footer className="w-full bg-primary text-white py-4">
@@ -29,11 +33,11 @@ const Footer = () => {
             {t("linkedin")}
           </a>
           <a
-            href="/Naimi Mohamed Amine.pdf"
-            download="Mohamed_Amine_Naimi_CV"
+            href={cvUrl}
+            download="Mohamed_Amine_Naimi_CV.pdf"
             className="flex items-center gap-2 text-white hover:text-secondary transition duration-200"
           >
-            <FaFileDownload size={20} /> {/* Icône de téléchargement */}
+            <FaFileDownload size={20} />
             <span>{t("Download CV")}</span>
           </a>
         </div>
